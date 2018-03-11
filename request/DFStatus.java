@@ -1,4 +1,4 @@
-package com.squarepolka.com.dialogflow.request;
+package com.squarepolka.dialogflow.request;
 
 
 public class DFStatus {

@@ -1,4 +1,4 @@
-package com.squarepolka.com.dialogflow.request;
+package com.squarepolka.dialogflow.request;
 
 import java.util.List;
 import java.util.Map;

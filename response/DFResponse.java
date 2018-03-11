@@ -1,4 +1,4 @@
-package com.squarepolka.com.dialogflow.response;
+package com.squarepolka.dialogflow.response;
 
 public class DFResponse {
     public String speech;

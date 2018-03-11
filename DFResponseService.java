@@ -1,11 +1,11 @@
-package com.squarepolka.com.dialogflow;
+package com.squarepolka.dialogflow;
 
 
-import com.squarepolka.com.dialogflow.handler.DFDefaultSpeechHandler;
-import com.squarepolka.com.dialogflow.handler.DFSpeechHandler;
-import com.squarepolka.com.dialogflow.handler.DFSpeechInput;
-import com.squarepolka.com.dialogflow.request.DFRequest;
-import com.squarepolka.com.dialogflow.response.DFResponse;
+import com.squarepolka.dialogflow.handler.DFDefaultSpeechHandler;
+import com.squarepolka.dialogflow.handler.DFSpeechHandler;
+import com.squarepolka.dialogflow.handler.DFSpeechInput;
+import com.squarepolka.dialogflow.request.DFRequest;
+import com.squarepolka.dialogflow.response.DFResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

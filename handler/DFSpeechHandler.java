@@ -1,4 +1,4 @@
-package com.squarepolka.com.dialogflow.handler;
+package com.squarepolka.dialogflow.handler;
 
 public interface DFSpeechHandler<T> {
 
