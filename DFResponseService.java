@@ -24,7 +24,11 @@ public class DFResponseService<T> {
     @Autowired
     private DFDefaultSpeechHandler<T> defaultSpeechHandler;
 
-    public DFResponse getResponseForRequest(DFRequest request, T inputData) {
+    public DFResponse getResponseForRequest(DFRequest request) {
+        return getResponseForRequest(request, null);
+    }
+
+    public DFResponse getResponseForRequest(DFRequest request, T inputDataOrNul) {
 
         // Assume a default speech handler unless overridden
         DFSpeechHandler<T> selectedSpeechHandler = defaultSpeechHandler;
@@ -47,7 +51,7 @@ public class DFResponseService<T> {
             LOGGER.error("While trying to find a speech handler caught " + ex.getMessage());
         }
 
-        String speechResponse = selectedSpeechHandler.getSpeech(speechInput, inputData);
+        String speechResponse = selectedSpeechHandler.getSpeech(speechInput, inputDataOrNul);
         DFResponse dfResponse = new DFResponse(speechResponse);
         return dfResponse;
     }
